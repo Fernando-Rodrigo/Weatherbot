@@ -13,7 +13,7 @@ client.on('message', msg => {
 
     const args = msg.content.slice(1).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
-
+// Comando para clima com unidade métrica weatherm e com unidade imperial weatheri
     if (command === 'weatherm') {
         if (!args.length) {
             return msg.reply('Please append a city name to `weatherm` if you want an actual report.');
